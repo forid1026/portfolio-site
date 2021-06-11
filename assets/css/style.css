@@ -29,7 +29,13 @@ body{
     margin: 0 auto;
 }
 
+section{
+    padding: 8rem 0;
+}
 
+.text-center{
+    text-align: center;
+}
 .btn {
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -112,7 +118,12 @@ header .main-nav{
     border-color: var(--light);
     border-radius: 25px;
     color: var(--light);
+    transition: 0.3s;
     
+}
+.btn-secondary:hover{
+    background-color: var(--light);
+    color: var(--dark);
 }
 
 /* scrool down button */
@@ -161,4 +172,256 @@ header .main-nav{
     to{
         top: 0;
     }
+}
+
+/* About design here */
+
+
+
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.about-sec .about-me-image{
+    height: 400px;
+}
+.image-thumbnail{
+    border: 2px solid #bbbbbb;
+    padding: 0.2rem;
+}
+
+.about-sec .about-outer-wrap h1{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.about-sec .about-outer-wrap h3{
+    font-size: 1.45rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.about-sec .about-outer-wrap h3 span{
+    color: var(--primary);
+}
+.about-sec .about-outer-wrap p{
+    margin-bottom: 1rem;
+    color: var(--gray-dark);
+}
+.align-item{
+    align-items: center;
+}
+.about-sec .social-icon a{
+    color: var(--dark);
+    text-decoration: none;
+}
+.about-sec .social-icon a i::before{
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+    padding: 0.5rem;
+    display: inline-block;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+}
+.about-sec .social-icon a:hover i::before{
+    border-color: var(--primary);
+    color:var(--primary)
+}
+.service-sec{
+    background-color: #f8f9fa;
+}
+.service-sec .service-info{
+    text-align: center;
+}
+.service-sec .service-info p{
+    color: var(--text-color);    
+    margin-bottom: 5rem;
+}
+.service-sec .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+    text-align: center;
+}
+.service-sec .card-wrapper .card{
+    background-color: #f7f7f7;
+    border: 1px solid #cecece;
+    padding: 30px 20px;
+}
+.service-sec .card-wrapper .card .icon{
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+.service-sec .card-wrapper .card h3{
+    margin-bottom: 1rem;
+}
+.service-sec .card-wrapper .card .card-border{
+    height: 2px;
+    width: 50px;
+    background-color: var(--primary);
+    margin: 15px auto;
+    transition: all 0.5s linear;
+}
+.service-sec .card-wrapper .card p{
+    color: var(--text-color);
+}
+.service-sec .card-wrapper .card:hover .card-border{
+    width: 100px;
+}
+
+/* freerlancer section */
+.freelancer-section{
+    text-align: center;
+}
+.freelancer-section h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.btn-primary{
+    border-color: var(--primary);
+    background: var(--primary);
+    color: var(--dark);
+    border-radius: 5px;
+    color: var(--light);
+    padding: 12px 35px;
+}
+.btn-primary:hover{
+    background: var(--primary);
+    color: var(--light);
+}
+
+
+/* client section */
+
+.client-section{
+    text-align: center;
+}
+.client-section h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.client-section p.sub-heading{
+    padding: 0rem 20rem;
+    margin-bottom: 4rem;
+    color: var(--text-color);
+}
+
+.client-section .slide img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.client-section .slide p{
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.client-section .slide h4{
+    color: var(--text-color);
+    font-weight: 400;
+}
+.client-section .slide h4 span{
+    color: var(--dark);
+    font-weight: 600 !important;
+}
+
+/* our-work section */
+
+.work-section h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.work-section p{
+    margin-bottom: 4rem;
+    padding: 0 20rem;
+    color: var(--text-color);
+}
+.portfolio-tab ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.portfolio-tab ul li{
+    margin-left: 2rem;
+    list-style: none;
+    padding: 0.2rem;
+}
+/* li.active {
+    height: 25px;
+    width: 40px;
+    background: var(--primary);
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.2rem;
+    display: block;
+} */
+
+.work-section .portfolio-image-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    grid-row-gap: 2rem;
+}
+
+.work-section .portfolio-image-wrapper img{
+    height: 100%;
+    width: 100%;
+}
+
+/* blog section */
+.blog-section h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.blog-section  p{
+    margin-bottom: 4rem;
+    color: var(--text-color);
+    text-align: center;
+    padding: 0 20rem;
+}
+
+
+.blog-section .card-content h2{
+    text-align: left;
+}
+
+.blog-section .card-content > p{
+    padding: 0;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.blog-section .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.blog-section .card-wrapper .img-wrapper img{
+    width: 100%;
+    border-radius: 10px;
+}
+.blog-section .card-wrapper .card-content h2{
+    font-size: 1.5rem;
+}
+.blog-section .card-wrapper .card-content h3{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.blog-section .card-wrapper .card-content h3 span{
+    color: var(--primary);
+   
+}
+.blog-section .card-wrapper .card-content a{
+    text-decoration: none;
 }
