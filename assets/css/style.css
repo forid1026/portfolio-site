@@ -10,11 +10,12 @@
 
 :root{
     --primary: #e65f78;
-    --light: #fff;
+    --light: #f2f2f2;
     --gray:#f8f9fa;
     --text-color: #6c757d;
     --gray-dark: #343a40;
     --dark:#000;
+    
 }
 
 body{
@@ -232,14 +233,18 @@ header .main-nav{
     color:var(--primary)
 }
 .service-sec{
-    background-color: #f8f9fa;
+    background-color: #f2f2f2;
 }
 .service-sec .service-info{
     text-align: center;
 }
+.service-sec .service-info h2{
+    margin-bottom: 1rem;
+}
 .service-sec .service-info p{
     color: var(--text-color);    
     margin-bottom: 5rem;
+    padding: 0 20rem;
 }
 .service-sec .card-wrapper{
     display: grid;
@@ -278,6 +283,8 @@ header .main-nav{
 /* freerlancer section */
 .freelancer-section{
     text-align: center;
+    /* background-color: var(--gray-dark); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%); */
 }
 .freelancer-section h2{
     font-size: 2rem;
@@ -302,6 +309,7 @@ header .main-nav{
 
 .client-section{
     text-align: center;
+    background-color: #f2f2f2;
 }
 .client-section h2{
     font-size: 2rem;
@@ -377,6 +385,9 @@ header .main-nav{
 }
 
 /* blog section */
+.blog-section{
+    background-color: #f2f2f2;
+}
 .blog-section h2{
     text-align: center;
     margin-bottom: 1rem;
@@ -411,7 +422,7 @@ header .main-nav{
     border-radius: 10px;
 }
 .blog-section .card-wrapper .card-content h2{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .blog-section .card-wrapper .card-content h3{
     font-size: 1rem;
@@ -424,4 +435,135 @@ header .main-nav{
 }
 .blog-section .card-wrapper .card-content a{
     text-decoration: none;
+    color: var(--gray-dark);
+    font-weight: 700;
+}
+
+/* contact-section */
+.contact-section h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.contact-section  p{
+    margin-bottom: 4rem;
+    color: var(--text-color);
+    text-align: center;
+    padding: 0 20rem;
+}
+.contact-section .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+.contact-section .card{
+    margin-bottom: 3rem;
+}
+.contact-section .card .contact-icon i{
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.contact-section .card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+    font-weight: 400;
+}
+.contact-section .card h6{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+.contact-section .card h6 a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.contact-section form .input-wrap-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+.contact-section form .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+.contact-section form input{
+    padding: .5rem;
+    border: 1px solid #dad2d2;
+    color: var(--text-color);
+    outline: none;
+}
+.contact-section form .input-wrap-2 input{
+    margin-bottom: 2rem;
+}
+
+.contact-section form .input-wrap-2 textarea{
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid #dad2d2;
+    margin-bottom: 1rem;
+}
+
+.contact-section .btn-wrapper{
+    margin-bottom: 2rem;
+    text-align: right;
+}
+
+/* footer */
+footer{
+    background-color: var(--gray-dark);
+    padding: 3rem 0;
+    text-align: center;
+    position: relative;
+}
+footer .social-icon{
+    margin-bottom: 1rem;
+}
+footer .social-icon a{
+    text-decoration: none;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+footer .social-icon a:link i::before{
+    margin-right: 1rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: var(--dark);
+    padding: .5rem;
+    font-size: 1rem;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+    
+    
+}
+footer .social-icon a:hover i::before{
+    color: var(--light);
+    background-color: var(--primary);
+    transform: rotate(360deg);
+}
+
+footer p{
+    color: var(--text-color);
+}
+
+/* back to top */
+.back-top{
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary);
+    text-align: center;
+    transition: all 0.5s;
+}
+.back-top i{
+    color: var(--light);
+    font-size: 30px;
+   
 }

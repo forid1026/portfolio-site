@@ -15,14 +15,14 @@
 <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="container">
             <a href="#">
                 <img src="./assets/images/logo.png" alt="LOGO" class="branding">
             </a>
             <ul class="main-nav">
                 <li class="active">
-                    <a href="#">home</a>
+                    <a href="#home">home</a>
                 </li>
                 <li>
                     <a href="#about">About</a>
@@ -40,7 +40,7 @@
                     <a href="#blog">Blog</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
 
             </ul>
@@ -236,7 +236,7 @@
 <!-- blog-section -->
 <section class="blog-section" id="blog">
     <div class="container">
-        <h2>Our Work</h2>
+        <h2>Our Blog</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur neque vel quia beatae consequatur</p>
 
         <div class="card-wrapper">
@@ -280,7 +280,77 @@
                 </div>
             </div>
         </div>
-       
+        </div>
+        </section>
+       <!-- contact us -->
+       <section class="contact-section text-center" id="contact">
+           <div class="container">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur neque vel quia beatae consequatur</p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="contact-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Call Us On</h3>
+                    <h6><a href="tel:+01750375008">01750375008</a></h6>
+                </div>
+                <div class="card">
+                    <div class="contact-icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <h3>Email Us At</h3>
+                    <h6><a href="mailto:exitdump1026@gmail.com">exitdump1026@gmail.com</a></h6>
+                </div>
+                <div class="card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map" aria-hidden="true"></i>
+                    </div>
+                    <h3>Call Us On</h3>
+                    <h6>Uttara sector 7, Dhaka 1230</h6>
+                </div>
+            </div>
+            <form action="#">
+                <div class="input-wrap-1">
+                    <input type="text" name="Name" id="" required placeholder="Your Name *">
+                    <input type="email" name="Email" id="" placeholder="Your Email *" required>
+                </div>
+                <div class="input-wrap-2">
+                    <input type="text" name="Subject" id="" placeholder="Your Subject" required>
+                    <textarea name="Message" id="" cols="30" rows="7" placeholder="Your Message"></textarea>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn btn-primary" value="Send"> Send Message</button>
+    
+                </div>
+            </form>
+
+           </div>
+       </section>
+      
+       <!-- footer section -->
+       <footer>
+           <div class="social-icon">
+               <a href="#">
+                   <i class="fab fa-facebook-f" aria-hidden="true"></i>
+               </a>
+               <a href="#">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+           </div>
+           <p>2018 - 2020 &copy; Kerri. Design by SRBhemes.</p>
+       </footer>
+
+       <!-- Back to top -->
+       <a href="#home" class="back-top">
+           <i class="fas fa-chevron-up"></i>
+       </a>
 
     <!-- JS  -->
     <script src="./assets/js/fontawesome.min.js"></script>
