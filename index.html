@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Kerri web portfolio template ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
     <!-- Font Awesome -->
@@ -10,66 +12,112 @@
     <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-<!-- Main CSS -->
-<link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- testimonial slider -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
+
 <body>
     <header id="home">
-        <div class="container">
-            <a href="#">
-                <img src="./assets/images/logo.png" alt="LOGO" class="branding">
-            </a>
-            <ul class="main-nav">
-                <li class="active">
-                    <a href="#home">home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#service">Services</a>
-                </li>
-                <li>
-                    <a href="#client">Client</a>
-                </li>
-                <li>
-                    <a href="#work">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#blog">Blog</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
+        <div id="particles-js">
 
-            </ul>
+            <nav>
+                <div class="container">
+                    <a href="#home">
+                        <img src="./assets/images/logo.png" alt="LOGO" class="branding">
+                        <img src="./assets/images/logo-dark.png" alt="LOGO" id="dark-logo">
+                    </a>
+
+                    <ul class="main-nav" id="nav">
+                        <li class=" current">
+                            <a href="#home">home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#service">Services</a>
+                        </li>
+                        <li>
+                            <a href="#client">Client</a>
+                        </li>
+                        <li>
+                            <a href="#work">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+                    <!-- mobile menu -->
+                    <div class="mobile-menu">
+                        <span onclick="openNav()">&#9776;</span>
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void()" onclick="closeNav()" class="closeBtn">&times;</a>
+                            <div class="overlay-content">
+
+                                <a  class=" current" onclick="closeNav()" href="#home">home</a>
+
+                                <a onclick="closeNav()" href="#about">About</a>
+
+                                <a onclick="closeNav()" href="#service">Services</a>
+
+                                <a onclick="closeNav()" href="#client">Client</a>
+
+                                <a onclick="closeNav()" href="#work">Portfolio</a>
+
+                                <a onclick="closeNav()" href="#blog">Blog</a>
+
+                                <a onclick="closeNav()" href="#contact">Contact</a>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
             <div class="container">
                 <div class="hero">
                     <h4>Welcome</h4>
-                <h1>I'M a Front End Developer.</h1>
-                <p>It is a log establised fact tha a reader will be of a page when establised fact looking at its layout</p>
-                <button class="btn btn-secondary">Download CV</button>
+                    <h1>I'M <span class="element"></span></h1>
+                    <p>It is a log establised fact tha a reader will be of a page when establised fact looking at its
+                        layout
+                    </p>
+                    <button class="btn btn-secondary">Download CV</button>
                 </div>
             </div>
-            
-        </div>
-        <div class="scroll-down">
-            <a href="#about" class="scroll">
-                <i></i>
-            </a>
+
+            <div class="scroll-down">
+                <a href="#about" class="scroll">
+                    <i></i>
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- About section -->
 
-    <section id="about" class="about-sec">
+    <section id="about" class="about-sec aboutStickySection">
         <div class="container flex align-item">
             <div class="flex-1">
                 <img src="./assets/images/about.jpg" alt="man" class="about-me-image image-thumbnail">
             </div>
             <div class="about-outer-wrap flex-1">
-                <h1>About Me</h1>
+                <h2>About Me</h2>
                 <h3>Hello! <span>I'M Kerri Don</span></h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam aperiam provident corrupti molestias,
                     quaerat illo officiis quasi. Error, odit assumenda. Minima facilis, aliquid reprehenderit amet minus
@@ -99,16 +147,13 @@
             </div>
         </div>
     </section>
-
-
     <!-- Services -->
 
     <section id="service" class="service-sec">
         <div class="container">
             <div class="service-info">
-                <h2 class="sub-heading">Our Services</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nobis magni magnam, repudiandae
-                    tempora nemo!</p>
+                <h2>Our Services</h2>
+                <p class="sub-heading">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
             </div>
             <div class="card-wrapper">
                 <div class="card">
@@ -187,106 +232,155 @@
     <section class="client-section" id="client">
         <div class="container">
             <h2>Our Client</h2>
-            <p class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur neque vel quia beatae consequatur  .</p>
-            <div class="slide">
-                <img src="./assets/images/testi-2.jpg" alt="Man">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minima, alias unde consectetur et, <br/>quos tempora perspiciatis doloremque cupiditate sapiente fuga </p>
-                <h4>-Ebony verty, <span>Envato </span></h4>
+            <p class="sub-heading">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+            <div class="slider">
+                <div class="slide">
+                    <img src="./assets/images/testi-1.jpg" class="image-thumbnail" alt="Man">
+                    <p>" The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                        opposed to using 'Content here."</p>
+                    <h4>-Ebony verty, <span>Envato </span></h4>
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/testi-2.jpg" class="image-thumbnail" alt="Man">
+                    <p>" The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                        opposed to using 'Content here."</p>
+                    <h4>-Ebony verty, <span>Envato </span></h4>
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/testi-3.jpg" class="image-thumbnail" alt="Man">
+                    <p>" The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                        opposed to using 'Content here."</p>
+                    <h4>-Ebony verty, <span>Envato </span></h4>
+                </div>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+    <!-- our work -->
+    <section class="work-section text-center" id="work">
+        <div class="container">
+            <h2>Our Work</h2>
+            <p class="sub-heading">It is a long established fact that a reader will be of a page when established fact looking at its layout.
+            </p>
+            <div class="portfolio-tab">
+                <ul>
+                    <li data-filter="all">All</li>
+                    <li data-filter=".seo">SEO</li>
+                    <li data-filter=".web">Web</li>
+                    <li data-filter=".graphic">Graphic</li>
+                    <li data-filter=".wordpress">Wordpress</li>
+                </ul>
+            </div>
+            <div class="portfolio-image-wrapper">
+                <div class="portfolio-image mix web">
+                    <img src="./assets/images/1.jpg" alt="">
+                    <div class="portfolio-overlay">
+                        <h4>Project Title</h4>
+                        <p>Porject short description</p>
+                    </div>
+                </div>
+                <div class="portfolio-image mix seo">
+                    <img src="./assets/images/2.jpg" alt="">
+                    <div class="portfolio-overlay">
+                        <h4>Project Title</h4>
+                        <p>Porject short description</p>
+                    </div>
+                </div>
+                <div class="portfolio-image mix graphic">
+                    <img src="./assets/images/3.jpg" alt="">
+                    <div class="portfolio-overlay">
+                        <h4>Project Title</h4>
+                        <p>Porject short description</p>
+                    </div>
+                </div>
+                <div class="portfolio-image mix wordpress">
+                    <img src="./assets/images/4.jpg" alt="">
+                    <div class="portfolio-overlay">
+                        <h4>Project Title</h4>
+                        <p>Porject short description</p>
+                    </div>
+                </div>
+                <div class="portfolio-image mix web">
+                    <img src="./assets/images/6.jpg" alt="">
+                    <div class="portfolio-overlay">
+                        <h4>Project Title</h4>
+                        <p>Porject short description</p>
+                    </div>
+                </div>
+                <div class="portfolio-image mix graphic seo">
+                    <img src="./assets/images/5.jpg" alt="">
+                    <div class="portfolio-overlay">
+                        <h4>Project Title</h4>
+                        <p>Porject short description</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-   <!-- our work -->
-   <section class="work-section text-center" id="work">
-       <div class="container">
-           <h2>Our Work</h2>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur neque vel quia beatae consequatur</p>
-           <div class="portfolio-tab">
-               <ul>
-                   <li class="active">All</li>
-                   <li>SEO</li>
-                   <li>WebDesign</li>
-                   <li>Graphic Design</li>
-                   <li>Wordpress</li>
-               </ul>
-           </div>
-           <div class="portfolio-image-wrapper">
-               <div class="portfolio-image">
-                   <img src="./assets/images/1.jpg" alt="">
-               </div>
-               <div class="portfolio-image">
-                <img src="./assets/images/2.jpg" alt="">
-            </div>
-            <div class="portfolio-image">
-                <img src="./assets/images/3.jpg" alt="">
-            </div>
-            <div class="portfolio-image">
-                <img src="./assets/images/4.jpg" alt="">
-            </div>
-            <div class="portfolio-image">
-                <img src="./assets/images/6.jpg" alt="">
-            </div>
-            <div class="portfolio-image">
-                <img src="./assets/images/5.jpg" alt="">
-            </div>
-           </div>
-       </div>
-   </section>
 
 
-<!-- blog-section -->
-<section class="blog-section" id="blog">
-    <div class="container">
-        <h2>Our Blog</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur neque vel quia beatae consequatur</p>
+    <!-- blog-section -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <h2>Our Blog</h2>
+            <p class="sub-heading">It is a long established fact that a reader will be of a page when established fact looking at its layout.
+            </p>
 
-        <div class="card-wrapper">
-            <div class="card">
-                <div class="img-wrapper">
-                    <img src="./assets/images/blog-1.jpg" alt="Article">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="./assets/images/blog-1.jpg" alt="Article">
+                    </div>
+                    <div class="card-content">
+                        <h2>There are many variations</h2>
+                        <h3>11 March 2018 <span>By kerri</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quos atque laudantium cumque
+                            voluptates? Molestiae, a est. Voluptates pariatur inventore, neque repudiandae unde nam
+                            delectus odit eius explicabo eum iusto aut alias adipisci rerum,</p>
+                        <a href="#">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+
+
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h2>There are many variations</h2>
-                    <h3>11 March 2018 <span>By kerri</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quos atque laudantium cumque voluptates? Molestiae, a est. Voluptates pariatur inventore, neque repudiandae unde nam delectus odit eius explicabo eum iusto aut alias adipisci rerum,</p>
-                    <a href="#">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="./assets/images/blog-2.jpg" alt="Article">
+                    </div>
+                    <div class="card-content">
+                        <h2>There are many variations</h2>
+                        <h3>11 March 2018 <span>By kerri</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quos atque laudantium cumque
+                            voluptates? Molestiae, a est. Voluptates pariatur inventore, neque repudiandae unde nam
+                            delectus odit eius explicabo eum iusto aut alias adipisci rerum,</p>
+                        <a href="#">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
 
 
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="img-wrapper">
-                    <img src="./assets/images/blog-1.jpg" alt="Article">
-                </div>
-                <div class="card-content">
-                    <h2>There are many variations</h2>
-                    <h3>11 March 2018 <span>By kerri</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quos atque laudantium cumque voluptates? Molestiae, a est. Voluptates pariatur inventore, neque repudiandae unde nam delectus odit eius explicabo eum iusto aut alias adipisci rerum,</p>
-                    <a href="#">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="./assets/images/blog-3.jpg" alt="Article">
+                    </div>
+                    <div class="card-content">
+                        <h2>There are many variations</h2>
+                        <h3>11 March 2018 <span>By kerri</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quos atque laudantium cumque
+                            voluptates? Molestiae, a est. Voluptates pariatur inventore, neque repudiandae unde nam
+                            delectus odit eius explicabo eum iusto aut alias adipisci rerum,</p>
+                        <a href="#">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
 
 
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-wrapper">
-                    <img src="./assets/images/blog-1.jpg" alt="Article">
-                </div>
-                <div class="card-content">
-                    <h2>There are many variations</h2>
-                    <h3>11 March 2018 <span>By kerri</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quos atque laudantium cumque voluptates? Molestiae, a est. Voluptates pariatur inventore, neque repudiandae unde nam delectus odit eius explicabo eum iusto aut alias adipisci rerum,</p>
-                    <a href="#">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
-
-
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-        </section>
-       <!-- contact us -->
-       <section class="contact-section text-center" id="contact">
-           <div class="container">
+    </section>
+    <!-- contact us -->
+    <section class="contact-section text-center" id="contact">
+        <div class="container">
             <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur neque vel quia beatae consequatur</p>
+            <p class="sub-heading">It is a long established fact that a reader will be of a page when established fact looking at its layout.
+            </p>
             <div class="card-wrapper">
                 <div class="card">
                     <div class="contact-icon">
@@ -312,29 +406,29 @@
             </div>
             <form action="#">
                 <div class="input-wrap-1">
-                    <input type="text" name="Name" id="" required placeholder="Your Name *">
-                    <input type="email" name="Email" id="" placeholder="Your Email *" required>
+                    <input type="text" name="Name" required placeholder="Your Name *">
+                    <input type="email" name="Email" placeholder="Your Email *" required>
                 </div>
                 <div class="input-wrap-2">
-                    <input type="text" name="Subject" id="" placeholder="Your Subject" required>
-                    <textarea name="Message" id="" cols="30" rows="7" placeholder="Your Message"></textarea>
+                    <input type="text" name="Subject" placeholder="Your Subject" required>
+                    <textarea name="Message" cols="30" rows="7" placeholder="Your Message"></textarea>
                 </div>
                 <div class="btn-wrapper">
                     <button class="btn btn-primary" value="Send"> Send Message</button>
-    
+
                 </div>
             </form>
 
-           </div>
-       </section>
-      
-       <!-- footer section -->
-       <footer>
-           <div class="social-icon">
-               <a href="#">
-                   <i class="fab fa-facebook-f" aria-hidden="true"></i>
-               </a>
-               <a href="#">
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <div class="social-icon">
+            <a href="#">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="#">
                 <i class="fab fa-instagram" aria-hidden="true"></i>
             </a>
             <a href="#">
@@ -343,16 +437,26 @@
             <a href="#">
                 <i class="fab fa-twitter" aria-hidden="true"></i>
             </a>
-           </div>
-           <p>2018 - 2020 &copy; Kerri. Design by SRBhemes.</p>
-       </footer>
+        </div>
+        <p>2018 - 2020 &copy; Kerri. Design by SRBhemes.</p>
+    </footer>
 
-       <!-- Back to top -->
-       <a href="#home" class="back-top">
-           <i class="fas fa-chevron-up"></i>
-       </a>
+    <!-- Back to top -->
+    <a href="#home" id="backTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
 
     <!-- JS  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/fontawesome.min.js"></script>
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
+    <script src="./assets/js/jquery.nav.js"></script>
+    <script src="./assets/js/typed.min.js"></script>
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/mixitup.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
